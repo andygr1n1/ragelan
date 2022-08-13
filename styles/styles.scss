@@ -1,0 +1,21 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .placeholder-italic::placeholder {
+        @apply italic;
+    }
+
+    .overflow-wrap-anywhere {
+        word-break: break-word #{!important}; /* Chrome, Safari */
+        overflow-wrap: anywhere #{!important}; /* Firefox */
+    }
+
+    .absolute-center {
+        @apply tw-absolute tw-left-1/2 tw-top-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2;
+    }
+
+    .hidden {
+        display: none;
+    }
+}

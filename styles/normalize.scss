@@ -1,0 +1,142 @@
+@tailwind base;
+
+@layer base {
+    *,
+    ::before,
+    ::after {
+        border-width: 0;
+        border-style: solid;
+        border-color: theme('borderColor.DEFAULT', currentColor);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Oxanium', cursive;
+        color: #fff;
+        margin-top: 0px;
+        font-style: normal;
+        font-weight: 800;
+        text-transform: normal;
+    }
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
+        color: inherit;
+    }
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    li {
+        list-style: none;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #cbcbcb;
+        margin-bottom: 15px;
+    }
+    hr {
+        border-bottom: 1px solid #eceff8;
+        border-top: 0 none;
+        margin: 30px 0;
+        padding: 0;
+    }
+    label {
+        color: #7e7e7e;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    *::-moz-selection {
+        background: #444;
+        color: #fff;
+        text-shadow: none;
+    }
+    ::-moz-selection {
+        background: #444;
+        color: #fff;
+        text-shadow: none;
+    }
+    ::selection {
+        background: #444;
+        color: #fff;
+        text-shadow: none;
+    }
+    *::-moz-placeholder {
+        color: #555555;
+        font-size: 14px;
+        opacity: 1;
+    }
+    *::placeholder {
+        color: #555555;
+        font-size: 14px;
+        opacity: 1;
+    }
+
+    a,
+    a:hover,
+    a:focus {
+        @apply tw-text-inherit tw-no-underline;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body,
+    html,
+    #__layout,
+    #__nuxt,
+    main {
+        @apply tw-font-poppins;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 15px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .theme--light.v-icon {
+        @apply tw-text-beta-500 #{!important};
+    }
+}
